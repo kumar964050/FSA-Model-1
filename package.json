@@ -1,0 +1,24 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "npm install && npm install --prefix public && npm run build --prefix public",
+    "dev": "concurrently \"nodemon app.js\" \"cd public && npm run dev\""
+  },
+  "keywords": [
+    "MERN Full-stack-application"
+  ],
+  "author": "Narendra",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  }
+}
